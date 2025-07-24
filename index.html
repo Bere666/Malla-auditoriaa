@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Malla Interactiva - Auditoría e Ingeniería en Control de Gestión</title>
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+<body>
+  <h1>Malla Interactiva - Auditoría e Ingeniería en Control de Gestión</h1>
+  <div class="malla">
+
+    <!-- Semestres -->
+    <div class="semestre" id="semestre-1">
+      <h2>Semestre 1</h2>
+      <div class="ramo" data-id="administracion">Administración</div>
+      <div class="ramo" data-id="economia">Economía</div>
+      <div class="ramo" data-id="matematica">Matemática</div>
+      <div class="ramo" data-id="comunicacion1">Comunicación Oral y Escrita I</div>
+      <div class="ramo" data-id="idioma1">Idioma Extranjero I</div>
+      <div class="ramo" data-id="intro-carrera">Introducción a la Carrera</div>
+      <div class="ramo" data-id="contabilidad">Fundamentos de Contabilidad</div>
+    </div>
+
+    <div class="semestre" id="semestre-2">
+      <h2>Semestre 2</h2>
+      <div class="ramo" data-id="comunicacion2" data-prereq="comunicacion1">Comunicación Oral y Escrita II</div>
+      <div class="ramo" data-id="idioma2" data-prereq="idioma1">Idioma Extranjero II</div>
+      <div class="ramo" data-id="sistema-info-contable" data-prereq="contabilidad">Sistema de Información Contable</div>
+    </div>
+
+    <!-- Continúa agregando los demás semestres aquí... -->
+
+    <div class="semestre" id="semestre-11">
+      <h2>Semestre 11</h2>
+      <div class="ramo" data-id="electivo2">Electivo Profesional II</div>
+      <div class="ramo" data-id="memoria" data-prereq="proyecto-memoria">Memoria</div>
+    </div>
+
+    <div class="semestre" id="extra">
+      <h2>Extras</h2>
+      <div class="ramo" data-id="deporte1">Deporte I</div>
+      <div class="ramo" data-id="deporte2">Deporte II</div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
